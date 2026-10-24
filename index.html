@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="GT Detail в Абакане: детейлинг, полировка, химчистка салона и шиномонтаж. Зоотехническая, 21. Услуги и запись.">
+  <title>GT Detail — детейлинг и шиномонтаж в Абакане</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="topline" id="demo-banner" hidden>ДЕМО-ШАБЛОН · Замените данные компании перед отправкой клиенту</div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-text"><strong data-field="shortName">GT DETAIL</strong><small>ДЕТЕЙЛИНГ И ШИНОМОНТАЖ</small></span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#prices">Стоимость</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" data-phone-link href="#contacts" data-field="phoneDisplay">+7 (999) 223-79-75</a>
+        <a class="button button-dark button-small" href="#booking">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> ДЕТЕЙЛИНГ И ШИНОМОНТАЖ · <span data-field="city">АБАКАН</span></div>
+          <h1 id="hero-title">ВНИМАНИЕ<br><em>К КАЖДОЙ</em><br>ДЕТАЛИ.</h1>
+          <p class="hero-lead" data-field="description">Детейлинг и шиномонтаж в Абакане. Уход за кузовом и салоном, сезонная смена шин — по предварительной записи.</p>
+          <div class="hero-cta">
+            <a class="button button-accent" href="#booking">Оставить заявку</a>
+            <a class="text-link light-link" href="#services">Посмотреть услуги</a>
+          </div>
+          <div class="hero-meta">
+            <div><span class="meta-label">ГДЕ МЫ</span><strong data-field="district">Красный Абакан · Зоотехническая, 21</strong></div>
+            <div><span class="meta-label">КОГДА РАБОТАЕМ</span><strong data-field="hours">Ежедневно 08:00–20:00 · перерыв 12:00–13:00</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="value-strip" aria-label="Преимущества записи">
+      <div class="container strip-grid">
+        <div><strong>УДОБНАЯ ЗАПИСЬ</strong><small>Выберите день и время</small></div>
+        <div><strong>УХОД ЗА АВТО</strong><small>Кузов, салон и колёса</small></div>
+        <div><strong>УДОБНОЕ ВРЕМЯ</strong><small>Ежедневно по записи</small></div>
+      </div>
+    </div>
+
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">ЧТО ДЕЛАЕМ</div><h2 id="services-title">ВАШ АВТО —<br><span>В ФОКУСЕ.</span></h2></div>
+          <p>Уход за внешним видом автомобиля и шиномонтаж. Выберите услугу и оставьте заявку.</p>
+        </div>
+        <div class="service-grid" id="services-list"></div>
+      </div>
+    </section>
+
+    <section class="section price-section" id="prices" aria-labelledby="prices-title">
+      <div class="container price-layout">
+        <div class="price-aside">
+          <div class="section-kicker">СТОИМОСТЬ</div>
+          <h2 id="prices-title">СТОИМОСТЬ<br><span>ПО ЗАПРОСУ.</span></h2>
+          <p>В карточке студии нет опубликованного прайса. Уточните стоимость нужной работы перед записью.</p>
+          <a class="button button-dark" href="#booking">Уточнить цену</a>
+        </div>
+        <div class="price-card">
+          <div class="price-card-head"><span>УСЛУГИ СТУДИИ</span><span id="price-demo-label" hidden>ПРИМЕР ЦЕН</span></div>
+          <div id="price-list"></div>
+          <p class="price-note" data-field="priceNote"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section section-dark" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <div class="section-kicker">О НАС</div>
+          <h2 id="about-title">УХОД,<br>КОТОРЫЙ<br><span>ВИДНО.</span></h2>
+        </div>
+        <div class="about-panel">
+          <p data-field="about"></p>
+          <div class="about-rule"></div>
+          <div class="about-facts"><div><span>Оставьте заявку</span></div><div><span>Согласуем время</span></div><div><span>Приезжайте к нам</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section review-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">ОТЗЫВЫ</div><h2 id="reviews-title">СЛОВО<br><span>КЛИЕНТАМ.</span></h2></div>
+          <a class="text-link" id="gis-reviews-link" href="#contacts">Смотреть отзывы в 2ГИС</a>
+        </div>
+        <div class="review-grid" id="reviews-list"></div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-grid">
+        <div class="booking-intro">
+          <div class="section-kicker">ВРЕМЯ ЗАПИСАТЬСЯ</div>
+          <h2 id="booking-title">ВЫБЕРИТЕ<br>ВРЕМЯ.<br><span>ОСТАЛЬНОЕ —<br>ЗА НАМИ.</span></h2>
+          <p>Оставьте контакты и пожелания. WhatsApp откроет готовое сообщение студии; время визита подтвердит мастер.</p>
+          <div class="booking-prompt">Займёт меньше минуты</div>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-header"><strong>ЗАЯВКА В GT DETAIL</strong></div>
+          <label>Ваше имя<input name="name" autocomplete="name" maxlength="70" placeholder="Как к вам обращаться" required></label>
+          <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="+7 (999) 123-45-67" required></label>
+          <label>Что нужно сделать<select name="service" id="service-select" required><option value="">Выберите услугу</option></select></label>
+          <div class="form-row"><label>Желаемая дата<input name="date" type="date" required></label><label>Желаемое время<input name="time" type="time" required></label></div>
+          <label>Комментарий <span class="optional">необязательно</span><textarea name="comment" rows="3" maxlength="500" placeholder="Марка авто, размер колёс или пожелания"></textarea></label>
+          <button class="button button-accent form-submit" type="submit"><span id="booking-button-text">Сформировать заявку</span></button>
+          <p class="form-note" id="form-note">В демоверсии вы увидите текст заявки. После добавления номера WhatsApp кнопка откроет сообщение для отправки.</p>
+          <div class="booking-result" id="booking-result" hidden><strong>Текст заявки готов</strong><textarea id="booking-message" rows="7" readonly aria-label="Текст заявки"></textarea><button type="button" class="copy-button" id="copy-message">Скопировать текст</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contact-grid">
+        <div><div class="section-kicker">КАК НАС НАЙТИ</div><h2 id="contacts-title">ЖДЁМ<br><span>ВАС В ГОСТИ.</span></h2></div>
+        <div class="contact-card">
+          <div class="contact-row"><small>АДРЕС</small><strong data-field="address">Абакан, Зоотехническая улица, 21, 1 этаж</strong></div>
+          <div class="contact-row"><small>ЧАСЫ РАБОТЫ</small><strong data-field="hours">Ежедневно 08:00–20:00 · перерыв 12:00–13:00</strong></div>
+          <div class="contact-row"><small>ТЕЛЕФОН</small><a data-phone-link href="#contacts" data-field="phoneDisplay">+7 (999) 223-79-75</a></div>
+          <div class="mini-map" id="mini-map"><div class="mini-map-placeholder"><strong>2ГИС</strong><span>Добавьте ссылку на карту в config.js</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-text"><strong data-field="shortName">GT DETAIL</strong><small>ДЕТЕЙЛИНГ И ШИНОМОНТАЖ</small></span></a><p>Уход за автомобилем с вниманием к деталям.</p><p class="footer-credit">Разработано <a href="https://webcube.site" target="_blank" rel="noopener noreferrer">WebCube — webcube.site</a></p></div></footer>
+  <a class="mobile-booking" href="#booking">Оставить заявку</a>
+</body>
+</html>
